@@ -677,6 +677,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms ease-in-out;
 }
 
 .footer-button-icon {
@@ -685,9 +686,7 @@ p {
 }
 
 .footer-form-container {
-  display: flex;
-  align-items: center;
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .form-button-close {
