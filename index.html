@@ -22,10 +22,10 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
   <body>
-    <header class="header-box">
-      <div class="container">
+    <header class="header">
+      <div class="container header-box">
         <nav class="menu">
-          <a class="logo-header-box" href="./index.html"
+          <a class="logo logo-header-box" href="./index.html"
             >Web<span class="logo-header-box-web">Studio</span></a
           >
           <ul class="nav-list">
@@ -48,12 +48,78 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-button" type="button">
+          <svg class="menu-button-icon" width="24" height="24">
+            <use href="./images/icons3.svg#iicon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
+
+      <!-- Mobile menu -->
+       <div class="mobile-menu">
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="menu-button-icon" width="8" height="8">
+              <use href="./images/icons3.svg#icon-Vector"></use>
+            </svg>   
+          </button>
+          <nav class="mobile-menu-nav">
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link-studio" href="./index.html">Studio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a class="mobile-menu-link" href="">Contacts</a>
+                </li>
+              </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-address-item"><a class="mobile-contacts" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
+              <li class="mobile-address-item"><a class="mobile-contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            </ul>
+          </address>
+          <ul class="socmedia-mobile-menu">
+            <li class="socmedia-mobile-item">
+            <a class="socmedia-mobile-link">
+              <svg class="socmedia-mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socmedia-mobile-item">
+            <a class="socmedia-mobile-link">
+              <svg class="socmedia-mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socmedia-mobile-item">
+            <a class="socmedia-mobile-link">
+              <svg class="socmedia-mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socmedia-mobile-item">
+            <a class="socmedia-mobile-link">
+              <svg class="socmedia-mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+          </ul>
+        </div>
+       </div>
     </header>
     <main>
       <!-- Hero image -->
       <section class="order-box">
-        <div class="container">
+        <div class="container main-container">
           <h1 class="solutions-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button-order">Order Service</button>
         </div>
@@ -115,14 +181,16 @@
         </div>
       </section>
       <!-- Team -->
-      <section class="team-box">
+      <section class="team-box container">
         <div class="container">
           <h2 class="team-h">Our Team</h2>
           <ul class="team-item-list">
             <li class="team-item-box">
               <img
                 class="team-img"
-                src="images/img-3.jpg"
+                src="./images/mark-guerrero.jpg"
+                srcset="./images/mark-guerrero-1x.jpg 1x,
+                        ./images/mark-guerrero-2x.jpg 2x"
                 alt="Mark Guerrero Photo"
                 width="264"
               />
@@ -164,7 +232,9 @@
             <li class="team-item-box">
               <img
                 class="team-img"
-                src="images/img-2.jpg"
+                src="./images/tom-ford.jpg"
+                srcset="./images/tom-ford-1x.jpg 1x,
+                        ./images/tom-ford-2x.jpg 2x"
                 alt="Tom Ford Photo"
                 width="264"
               />
@@ -206,7 +276,9 @@
             <li class="team-item-box">
               <img
                 class="team-img"
-                src="images/img-1.jpg"
+                src="./images/camila-garcia.jpg"
+                srcset="./images/camila-garcia-1x.jpg 1x,
+                        ./images/camila-garcia-2x.jpg 2x"
                 alt="Camila Garcia Photo"
                 width="264"
               />
@@ -248,7 +320,9 @@
             <li class="team-item-box">
               <img
                 class="team-img"
-                src="images/img.jpg"
+                src="./images/daniel-wilson.jpg"
+                srcset="./images/daniel-wilson-1x.jpg 1x,
+                        ./images/daniel-wilson-2x.jpg 2x"
                 alt="Daniel Wilson Photo"
                 width="264"
               />
@@ -452,7 +526,7 @@
       </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="form-button-close">
           <svg class="form-button-icon" width="8" height="8">
