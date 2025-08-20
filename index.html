@@ -49,7 +49,7 @@
           </ul>
         </address>
 
-        <button class="menu-button" type="button">
+        <button class="menu-button" type="button" data-menu-open>
           <svg class="menu-button-icon" width="24" height="24">
             <use href="./images/icons4.svg#icon-heroicons-solid_menu"></use>
           </svg>
@@ -57,11 +57,11 @@
       </div>
 
       <!-- Mobile menu -->
-       <div class="mobile-menu">
+       <div class="mobile-menu is-open" data-menu>
         <div class="mobile-menu-container">
-          <button class="mobile-menu-close">
+          <button class="mobile-menu-close" data-menu-close>
             <svg class="menu-button-icon" width="8" height="8">
-              <use href="./images/icons3.svg#icon-Vector"></use>
+              <use href="./images/icons2.svg#icon-close-black-18dp-2-1"></use>
             </svg>   
           </button>
           <nav class="mobile-menu-nav">
@@ -79,34 +79,34 @@
           </nav>
           <address class="mobile-menu-address">
             <ul class="mobile-address-list">
+              <li class="mobile-address-item"><a class="mobile-contacts phone-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
               <li class="mobile-address-item"><a class="mobile-contacts" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
-              <li class="mobile-address-item"><a class="mobile-contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
           </address>
           <ul class="socmedia-mobile-menu">
             <li class="socmedia-mobile-item">
-            <a class="socmedia-mobile-link">
+            <a class="socmedia-mobile-link" href="">
               <svg class="socmedia-mobile-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
             </a>
           </li>
           <li class="socmedia-mobile-item">
-            <a class="socmedia-mobile-link">
+            <a class="socmedia-mobile-link" href="">
               <svg class="socmedia-mobile-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </a>
           </li>
           <li class="socmedia-mobile-item">
-            <a class="socmedia-mobile-link">
+            <a class="socmedia-mobile-link" href="">
               <svg class="socmedia-mobile-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </a>
           </li>
           <li class="socmedia-mobile-item">
-            <a class="socmedia-mobile-link">
+            <a class="socmedia-mobile-link" href="">
               <svg class="socmedia-mobile-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
@@ -121,7 +121,7 @@
       <section class="order-box">
         <div class="container main-container">
           <h1 class="solutions-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-order">Order Service</button>
+          <button type="button" class="button-order" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- Advantages -->
@@ -159,8 +159,8 @@
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="benefits-list-h">Diligence</h3>
-              <p class="benefits-list-p">
+              <h3 class="benefit-list-h">Diligence</h3>
+              <p class="benefit-list-p">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -181,7 +181,7 @@
         </div>
       </section>
       <!-- Team -->
-      <section class="team-box container">
+      <section class="team-box">
         <div class="container">
           <h2 class="team-h">Our Team</h2>
           <ul class="team-item-list">
@@ -373,7 +373,7 @@
               <div class="app-pic">
                 <picture>
                   <source srcset="./images/bank-app-1x.jpg 1x, ./images/bank-app-2x.jpg 2x" media="(min-width:1158px)">
-                  <source srcset="./images/bank-app-tab-1x.jpg 1x, ./images/bank-app-tab-2x 2x" media="(min-width:768px)">
+                  <source srcset="./images/bank-app-tab-1x.jpg 1x, ./images/bank-app-tab-2x.jpg 2x" media="(min-width:768px)">
                   <source srcset="./images/bank-app-mob-1x.jpg 1x, ./images/bank-app-mob-2x.jpg 2x" media="(max-width:767px)">
               <img
                 class="portfolio-img"
@@ -556,9 +556,9 @@
       </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay is-open" data-modal>
       <div class="modal">
-        <button type="button" class="form-button-close">
+        <button type="button" class="form-button-close" data-modal-close>
           <svg class="form-button-icon" width="8" height="8">
             <use href="./images/icons2.svg#icon-close-black-18dp-2-1"></use>
           </svg>
@@ -628,5 +628,8 @@
         </form>
     </div>
       </div>
+
+      <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
   </body>
 </html>

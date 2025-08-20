@@ -98,7 +98,7 @@ button {
 }
 
 .logo-header-box {
-  padding: 24px 0;
+  padding: 16px 8px;
 }
 
 .logo-header-box-web {
@@ -240,6 +240,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-left: 16px;
 }
 
 .mobile-menu-nav {
@@ -272,7 +273,7 @@ button {
   border: none;
 }
 
-.mobile-menu-link .mobile-menu-link-studio {
+.mobile-menu-link {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -289,6 +290,9 @@ button {
 }
 
 .mobile-menu-link-studio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
   position: relative;
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -313,10 +317,15 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+  margin-left: 16px;
 }
 
 .mobile-contacts:hover,
 .mobile-contacts:focus {
+  color: #4d5ae5;
+}
+
+.phone-mobile {
   color: #4d5ae5;
 }
 
@@ -330,6 +339,7 @@ button {
   display: flex;
   justify-content: start;
   gap: 40px;
+  margin-left: 16px;
 }
 
 .socmedia-mobile-item {
@@ -382,6 +392,11 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.socmedia-mobile-icon {
+  fill: #ffffff;
+}
+
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -393,7 +408,7 @@ button {
 
 .order-box {
   display: block;
-  min-width: 320px;
+  max-width: 320px;
   background-color: #2e2f42;
   align-items: center;
   padding: 72px 0;
@@ -494,8 +509,10 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .order-box {
+  max-width: 1158px;
+  }
   .solutions-title {
-    max-width: 1158px;
     margin-bottom: 48px;
   }
   .section-one {
@@ -513,7 +530,6 @@ button {
 }
 
 .benefits-box {
-  background-image: linear-gradient rgba(46, 47, 66, 0.7);
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -540,7 +556,7 @@ button {
 }
 
 .benefit-list-p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -548,9 +564,6 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .benefits-box {
-    background-size: 768px 504px;
-  }
 
   .benefit-ul {
     max-width: 768px;
@@ -570,7 +583,6 @@ button {
 @media screen and (min-width: 1158px) {
   .benefits-box {
     padding: 120px 0;
-    max-width: 1158px;
     gap: 24px;
   }
 
@@ -610,13 +622,9 @@ button {
 
 .team-box {
   background-color: #f4f4fd;
-  padding: 96px 0;
+  padding: 120px 0;
 }
 
-.team-box .container {
-  max-width: 678px;
-  padding: 0 28px;
-}
 
 .team-h {
   font-weight: 700;
@@ -982,10 +990,11 @@ margin-bottom: 16px;
   .logo-footer-box{
       margin: 0;
       text-align: left;
+      margin-bottom: 16px;
   }
 
   .footer-container{
-      max-width: 528px;
+      max-width: 584px;
       gap: 72px 24px;
       margin: 0 auto;
   }
@@ -1030,7 +1039,7 @@ margin-bottom: 16px;
   }
 }
 
-.modal-overlay .is-open {
+.modal-overlay.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1040,6 +1049,7 @@ margin-bottom: 16px;
   position: fixed;
   width: 100%;
   height: 100%;
+  padding: 16px 0;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1049,6 +1059,12 @@ margin-bottom: 16px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-overlay {
+    padding: 24px 0;
+  }
 }
 
 .modal{
@@ -1141,7 +1157,7 @@ margin-bottom: 16px;
 .form-input {
   width: 100%;
     height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid #8e8f99;
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
@@ -1172,7 +1188,7 @@ margin-bottom: 16px;
   font-size: 12px; 
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  border-color: #8e8f99;
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
@@ -1215,6 +1231,7 @@ margin-bottom: 16px;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  flex-shrink: 0;
 }
 
 .form-label-input-last:checked + .form-label-last > .user-privacy-span {
