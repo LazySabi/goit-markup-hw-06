@@ -92,13 +92,12 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   display: block;
-  margin-right: 76px;
   position: relative;
   color: #404bbf;
 }
 
 .logo-header-box {
-  padding: 16px 8px;
+  padding: 16px 0;
 }
 
 .logo-header-box-web {
@@ -231,6 +230,7 @@ button {
   position: relative;
   padding-top: 72px;
   padding-bottom: 40px;
+  padding-left: 16px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -240,7 +240,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-left: 16px;
 }
 
 .mobile-menu-nav {
@@ -317,7 +316,6 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  margin-left: 16px;
 }
 
 .mobile-contacts:hover,
@@ -339,7 +337,6 @@ button {
   display: flex;
   justify-content: start;
   gap: 40px;
-  margin-left: 16px;
 }
 
 .socmedia-mobile-item {
@@ -510,18 +507,16 @@ button {
 
 @media screen and (min-width: 1158px) {
   .order-box {
-  max-width: 1158px;
-  }
-  .solutions-title {
-    margin-bottom: 48px;
-  }
-  .section-one {
-    padding: 188px 0;
-    background-image: linear-gradient(
+  max-width: 1440px;
+  padding: 188px 0;
+  background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+  }
+  .solutions-title {
+    margin-bottom: 48px;
   }
 }
 
@@ -556,7 +551,7 @@ button {
 }
 
 .benefit-list-p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -618,6 +613,11 @@ button {
     color: #2e2f42;
     margin-bottom: 8px;
   }
+  
+  .benefit-list-p {
+  font-weight: 400;
+  }
+
 }
 
 .team-box {
@@ -646,6 +646,7 @@ button {
   flex-wrap: wrap;
   max-width: 320px;
   gap: 72px;
+  justify-content: center;
 }
 
 .team-item-box {
@@ -1061,11 +1062,6 @@ margin-bottom: 16px;
   pointer-events: none;
 }
 
-@media screen and (min-width: 768px) {
-  .modal-overlay {
-    padding: 24px 0;
-  }
-}
 
 .modal{
   position: absolute;
@@ -1268,6 +1264,6 @@ margin-bottom: 16px;
   .modal{
       width: 408px;
       min-height: 584px;
-      padding: 72px 16px 24px 16px;
+      padding: 72px 24px 24px 24px;
   }
 }
